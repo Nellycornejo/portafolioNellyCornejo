@@ -1,0 +1,432 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --cor-de-fundo: #f0d0eb;
+    --cor-de-link: #000;
+    --rosa-principal: #c86daa;
+    --rosa-claro: #faeef4;
+    --font-family: 'Raleway', sans-serif;
+    --font-family-romantica: 'Great Vibes', cursive;
+}
+
+body {
+   
+
+        box-sizing: border-box;
+       background-color: var(--cor-de-fundo);
+        background-image: ('assets/fondocerezo.png'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        font-family: 'Raleway';
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sección Menu*/
+
+}
+.menu {
+    width: 100%;
+    background: var(--rosa-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9e5e1; 
+    border-bottom: 2px solid #d5b5b0; 
+    font-family: 'Garamond', serif; 
+}
+
+.menu__title {
+    margin-left: 15px;
+    font-size: 36px; 
+    color: #5b3a34; 
+    text-shadow: 1px 1px 2px #fff; 
+}
+
+.menu__list {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0; 
+    margin: 0; 
+    list-style-type: none; 
+}
+
+.menu__list__item a {
+    display: block; 
+    padding: 10px; 
+    color: #5b3a34; 
+    transition: background-color 0.3s; 
+}
+
+.menu__list__item a:hover {
+    background-color: #d5b5b0; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Cambiar color del texto al pasar el mouse */
+}
+
+
+/*Sección Title*/
+.title {
+    background-color: var(--rosa-claro);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.title__profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.title__bio {
+    font-family: var(--font-family-romantica);
+    font-size: 46px;
+    color: var(--rosa-principal);
+    margin: 20px 0;
+}
+
+.title__subsection {
+    font-size: 28px;
+    color: #333;
+}
+
+.title__network {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.title__network__item {
+    margin: 0 20px;
+}
+
+.title__network__item a {
+    color: var(--rosa-principal);
+    display: flex;
+    align-items: center;
+}
+
+.title__network__item img {
+    margin-left: 5px;
+}
+
+/*Sección About*/
+.about {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 20px; 
+}
+
+.about__title {
+    font-family: var(--font-family-romantica);
+    font-size: 32px;
+    color: var(--rosa-principal);
+    text-align: center;
+}
+
+.about__paragraph {
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.about__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*Sección Skills*/
+.skills {
+    background-color: var(--rosa-claro);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills__title {
+    font-family: var(--font-family-romantica);
+    font-size: 32px;
+    color: var(--rosa-principal);
+    margin-bottom: 20px;
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills__box {
+    margin: 10px;
+}
+
+.skills__img img {
+    width: 50px;
+    height: 50px;
+}
+
+.skills__name {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/*Sección Hobbies*/
+.hobbies {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hobbies__title {
+    font-family: var(--font-family-romantica);
+    font-size: 32px;
+    color: var(--rosa-principal);
+    margin-bottom: 20px;
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobbies__box {
+    margin: 10px;
+}
+
+.hobbies__img img {
+    width: 50px;
+    height: 50px;
+}
+
+.hobbies__name {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/*Sección Formación Académica*/
+.academic {
+    background-color: var(--rosa-claro);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.academic__title {
+    font-family: var(--font-family-romantica);
+    font-size: 32px;
+    color: var(--rosa-principal);
+    margin-bottom: 20px;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.academic__courses__box {
+    margin: 10px;
+    text-align: center;
+}
+
+.academic__courses__item__img img {
+    width: 50px;
+    height: 50px;
+}
+
+.academic__courses__item__title h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.academic__courses__item__subtitle p {
+    font-size: 14px;
+    color: #666;
+}
+
+/*Sección Experiencia Profesional/Proyectos*/
+.experience {
+    padding: 40px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.experience__box {
+    display: flex; /
+    align-items: center; 
+    margin-bottom: 20px; 
+    padding: 15px;
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px; 
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.experience__box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.experience__img {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 5px; 
+}
+
+.experience__title {
+    font-size: 1.5em; 
+    color: #333; 
+    margin: 0; 
+}
+
+.experience__text {
+    font-size: 1em; 
+    color: #666; 
+    margin: 5px 0; 
+}
+
+.experience__repo,
+.experience__demo {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.experiencia__botao--repo,
+.experience__botao--demo {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #5b3a34; 
+    color: #fff; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.experiencia__botao--repo:hover,
+.experience__botao--demo:hover {
+    background-color: #8b5e52; 
+}
+
+/*Sección Contacto*/
+.formcontato {
+    background-color: var(--rosa-claro);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.formcontato__title {
+    font-family: var(--font-family-romantica);
+    font-size: 32px;
+    color: var(--rosa-principal);
+    margin-bottom: 20px;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--rosa-principal);
+    border-radius: 5px;
+    width: 300px;
+}
+
+.formcontato__botao {
+    padding: 10px 20px;
+    background-color: var(--rosa-principal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formcontato__botao:hover {
+    background-color: var(--rosa-claro);
+}
+
+.form-message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--rosa-principal);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer__rodape p {
+    margin: 5px 0;
+}
+
+/* Responsividad */
+
+/*Tablet*/
+@media (min-width: 768px) {
+    .menu__list {
+        flex-direction: row;
+    }
+
+    .title__div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title__profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills__line,
+    .hobbies__line,
+    .academic__courses {
+        justify-content: space-around;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+    .menu__list {
+        flex-direction: column;
+    }
+
+    .title__profile {
+        width: 150px;
+        height: 150px;
+    }
+}
